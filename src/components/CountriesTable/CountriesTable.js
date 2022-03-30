@@ -56,6 +56,10 @@ const CountriesTable = ({ countries }) => {
 
           {value === "population" && <SortArrow direction={direction} />}
         </button>
+        <button
+          className={styles.heading_area}
+          onClick={() => setValueAndDirection("area")}
+        ></button>
       </div>
       {orderedCountries.map((item) => (
         <div className={styles.amin}>
